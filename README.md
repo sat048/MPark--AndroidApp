@@ -1,6 +1,8 @@
 # MPark
 An Android App for people on the University of Michigan campus to easily find parking spots that are available
 
+
+
 ## Tech Stack
 
 Frontend:
