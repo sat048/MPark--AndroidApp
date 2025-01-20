@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">MPark</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_signup">SignupActivity</string>
+    <string name="signup_prompt">Don\'t have an account? Sign up</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="button_sign_up">Sign Up</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="don_t_have_an_account_sign_up">Don\'t have an account? Sign up</string>
+    <string name="welcome">Welcome back!</string>
+    <string name="back">Back</string>
+    <string name="open_panel">Open Panel</string>
+</resources>

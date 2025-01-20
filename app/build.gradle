@@ -1,0 +1,77 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.android.libraries.mapsplatform.secrets-gradle-plugin'
+    id 'com.google.gms.google-services'
+
+}
+
+android {
+    namespace 'com.example.mpark'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.example.mpark"
+        minSdk 26
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildFeatures {
+        viewBinding true
+        buildConfig true
+        compose = true
+    }
+    composeOptions {
+        kotlinCompilerExtensionVersion "1.5.10" // Use the appropriate version
+        kotlinCompilerVersion "1.9.20"
+    }
+}
+
+secrets {
+    // Optionally specify a different file name containing your secrets.
+    // The plugin defaults to "local.properties"
+    propertiesFileName = "secrets.properties"
+
+    // A properties file containing default secret values. This file can be
+    // checked in version control.
+    defaultPropertiesFileName = "local.defaults.properties"
+
+    // Configure which keys should be ignored by the plugin by providing regular expressions.
+    // "sdk.dir" is ignored by default.
+    ignoreList.add("keyToIgnore") // Ignore the key "keyToIgnore"
+    ignoreList.add("sdk.*")       // Ignore all keys matching the regexp "sdk.*"
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.firebase:firebase-auth:22.3.1'
+    implementation 'com.google.android.material:material:1.11.0'
+    implementation 'com.google.android.gms:play-services-maps:18.2.0'
+    implementation 'com.google.android.gms:play-services-location:21.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    implementation 'com.google.firebase:firebase-firestore:24.11.1' // Check for the latest version
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.9.20"
+    implementation "androidx.core:core-ktx:1.12.0"
+    implementation "androidx.compose.ui:ui:1.6.5"
+    // Add other Compose dependencies here, such as Material, Tooling, etc.
+    implementation "androidx.compose.material:material:1.6.5"
+    implementation "androidx.compose.ui:ui-tooling-preview:1.6.5"
+    androidTestImplementation "androidx.compose.ui:ui-test-junit4:1.6.5"
+    debugImplementation "androidx.compose.ui:ui-tooling:1.6.5"
+}

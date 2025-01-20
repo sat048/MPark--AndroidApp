@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="welcome_banner">
+        <item name="android:textSize">24sp</item> <!-- Use 'sp' for text size -->
+        <item name="android:textColor">#CC000000</item> <!-- Text color -->
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>

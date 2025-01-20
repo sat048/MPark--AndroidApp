@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "505343516331",
+    "project_id": "m-park25",
+    "storage_bucket": "m-park25.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:505343516331:android:e2ab11ce526907e1c221ee",
+        "android_client_info": {
+          "package_name": "com.example.mpark"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1Zenz4IJDmde70eG2ZvGDSDrcLbPVMUE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
